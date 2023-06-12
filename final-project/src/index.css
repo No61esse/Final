@@ -1,0 +1,72 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav li {
+  list-style-type: none;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.cart-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.checkout-form {
+  margin-top: 10px;
+}
+
+.checkout-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.checkout-form input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.checkout-form button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.order-history-item {
+  margin-bottom: 10px;
+}

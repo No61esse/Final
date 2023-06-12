@@ -1,0 +1,165 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 120px;
+  gap: 105px;
+  height: 84px;
+
+
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 16px;
+  }
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-bottom: auto;
+
+
+}
+
+nav li {
+  margin-right: 37px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 15px;
+  gap: 10px;
+  font-size: 13px;
+
+
+}
+
+nav li a {
+  color: #666;
+  text-decoration: none;
+
+}
+
+nav li a:hover {
+  color: #333;
+}
+
+/* Добавленные стили для анимации подчеркивания */
+nav li a {
+  display: inline-block;
+  position: relative;
+}
+
+nav li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+nav li a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 21px;
+
+
+  width: 229px;
+  height: 56px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+.button-1 {
+  background: #FFFFFF;
+  /* border: 1px solid #3450E6; */
+  border-radius: 8px;
+  width: 90px;
+  height: 50px;
+  border-style: none;
+
+}
+
+.button-2 {
+  /* background: #3450E7; */
+  border-radius: 8px;
+  padding: 1px 2px;
+  width: 90px;
+  height: 50px;
+  border-style: none;
+  background: #FFFFFF;
+
+
+}
+
+.button-3 {
+  border-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 24px;
+  gap: 8px;
+  background: #FFFFFF;
+  border: 2px solid;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  list-style: none;
+  box-sizing: border-box;
+  width: 90px;
+  height: 50px;
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
